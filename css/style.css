@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Gloria+Hallelujah&family=Rammetto+One&family=Shadows+Into+Light&family=Titan+One&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0%;
+}
+body {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, #9fbd90, #2f382f, #9fbd90);
+}
+
+header {
+    width: 100%;
+    height: 20rem;
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.title1 {
+    text-align: center;
+    font-size: 8rem;
+    text-shadow: 0 0 15px #ffff00;
+    color: #00ffff;
+    font-family: "Caveat Brush", cursive;
+    animation: title 1s infinite;
+}
+
+@keyframes title {
+    20% {
+        text-shadow: #00ffff;
+        color: #ffff00;
+    }
+}
+
+.hr-space {
+    
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+}
+#filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name-filter {
+    text-align: center;
+    width: 10rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: #1c272e;
+    font-family: 'delicious Handrawn', cursive;
+    color: #ffff;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.containerCards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-Character {
+    background-image: linear-gradient(90deg, #d2e0ce, #1f2127, #c07a51);
+    width: 28rem;
+    height: 10rem;
+    border: groove 5px #484444;
+    margin: 1.5rem;
+    display: flex;
+}
+
+
+
+.card-Character > img {
+    width: 40%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .containerCards {
+        display: flex;
+      flex-direction: column;
+    }
+  }
+
+.description-card {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description-card > h2 {
+    text-align: center;
+    color: #ffff00;
+    text-shadow: 0 0 15px #ffff;
+}
+
+.description-card > p {
+    text-align: center;
+    font-size:  1.3rem;
+    color: #9fee21;
+    text-shadow: 0 0 15px #ffff;
+
+}
+
+footer {
+    background-image: linear-gradient(90deg, #9db69d, #9fbd90, #9db69d);
+    height: auto;
+    width: 100%;
+    bottom: 0;
+}
+
+.footerSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    color: #000000;
+}
+
+.footerSection > ul {
+    list-style-type: none;
+    margin: 0 30px;
+    justify-content: space-between;
+}
+
+.Github a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+footer h2 {
+    color: #ffff00;
+    text-shadow: 0 0 15px #ffff;
+}
+
+.blue {
+    color: #ffff;
+    text-shadow: 0 0 15px #ffff;
+}
+
+footer > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ffff00;
+    text-shadow: 0 0 15px #ffff;
+}
