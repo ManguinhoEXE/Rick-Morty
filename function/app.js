@@ -47,5 +47,5 @@ const getCharacteByName = async ( event ) => {
     data.map(character => createCards(character));
 }
 
-window.addEventListener('DOMContentLoaded', generateAllCharacter);
+document.addEventListener('DOMContentLoaded', generateAllCharacter);
 filter.addEventListener('change', getCharacteByName);
