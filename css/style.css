@@ -74,6 +74,7 @@ main {
     margin-top: 1.5rem;
 }
 .containerCards {
+    flex: 0 1 calc(25% - 1.5rem);
     width: 100%;
     display: flex;
     justify-content: center;

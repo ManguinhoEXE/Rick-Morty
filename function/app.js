@@ -7,7 +7,7 @@ const URL2 = "https://rickandmortyapi.com/api/character/?name=";
 const getApi = async (URL) => {
     const response = await fetch(URL);
     const data = await response.json();
-    return data.results;
+    return data.results.slice(0, 15);
 }
 
 const createCards = ( character ) => {
@@ -44,7 +44,7 @@ const generateAllCharacter = async () => {
 const getCharacteByName = async ( event ) => {
     containerCards.innerHTML = "";
     const data = await getApi(URL2+event.target.value);
-    data.map ( character => createCards(character));
+    data.map(character => createCards(character));
 }
 
 window.addEventListener('DOMContentLoaded', generateAllCharacter);
